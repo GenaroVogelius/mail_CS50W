@@ -1,0 +1,74 @@
+textarea {
+  min-height: 400px;
+}
+
+body{
+  background-image: repeating-radial-gradient(#d8d8d863, #ffffff 11px);
+}
+
+form{
+      gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+  cursor: pointer;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+  text-align: center;
+}
+
+#compose-body {
+  height: 10rem;
+  resize: none;
+  
+}
+
+.w-auto {
+  box-shadow: -19px 18px 38px -18px black;
+}
+
+#innerdiv{
+  margin-bottom: 0;
+}
+
+
+/*  liveAlertPlaceholder*/
+#innerdiv, #liveAlertPlaceholder {
+    animation-name: hide;
+    animation-duration: 2.8s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-delay: 2s;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+        height: 100%;
+        line-height: 100%;
+        
+    }
+    75% {
+        opacity: 0;
+        height: 1px;
+        line-height: 50%;
+        margin-bottom: 1px;
+        padding: 1px;
+        font-size: 5px;
+    }
+    100% {
+        opacity: 0;
+        height: 0px;
+        line-height: 0px;
+        padding: 0px;
+        margin: 0px;
+        font-size: 0px;
+
+    }
+}
